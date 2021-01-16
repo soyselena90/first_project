@@ -1,0 +1,70 @@
+<?php include_once("../layout/header.html"); ?>
+<body style="background-color : #fff">
+  <header>
+	<div id="showcase-top" class="showcase-top">
+		<a href="/index.html" class="logo_a"><img src="/img/Logo_01.svg" alt="K-LIVE"></a>
+		<a href="/login/login.html" class="btn btn-rounded">로그인</a>
+	</div>
+</header>
+<section id="container_idandpw">
+  <div class="content_intro_idpw">
+    <h3>
+      <span class="tt">아이디 / 비밀번호 찾기</span>
+    </h3>
+    <p class="coment_idpw">
+      <span>아이디 또는 비밀번호가 생각나지 않으세요?<br>회원정보를 입력 하신 후 확인 버튼을 클릭해주세요.</span>
+    </p>
+  </div>
+  <div class="id_pw_tabbox">
+    <ul class="id_pw_ul">
+      <li>
+        <input type="radio" id="find_id" name="id_pw_find" value="아이디찾기" checked>
+        <label for="find_id">아이디찾기</label>
+        <div class="idpw_abbox idabbox">
+          <span class="maring_span">
+            <i class="fas fa-mobile-alt"></i>
+            <a href="https://nice.checkplus.co.kr/CheckPlusSafeModel/checkplus.cb?m=auth_mobile_main"
+            onclick="window.open(this.href, 'mywin','left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;">
+            휴대폰 인증</a>
+            </span>
+          <span class="maring_span">
+            <i class="far fa-credit-card"></i>
+            <a href="https://card.ok-name.co.kr/popup/main/select.do"
+            onclick="window.open(this.href, 'mywin','left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;">
+            계좌/신용카드 인증</a>
+          </span>
+        </div>
+      </li>
+      <li>
+        <input type="radio" id="find_pw" name="id_pw_find" value="비밀번호찾기">
+        <label for="find_pw">비밀번호찾기</label>
+        <div class="idpw_abbox pwababox">
+          <div class="idbox_pwab">
+          <label for="u_id">아이디</label>
+          <input type="text" id="u_id" title="아이디를 입력해주세요" class="input_pwforid">
+          </div>
+          <span>
+            <i class="fas fa-mobile-alt"></i>
+            <a href="https://nice.checkplus.co.kr/CheckPlusSafeModel/checkplus.cb?m=auth_mobile_main"
+            onclick="window.open(this.href, 'mywin','left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;">
+            휴대폰 인증</a>
+          </span>
+          <span>
+            <i class="far fa-credit-card"></i>
+            <a href="https://card.ok-name.co.kr/popup/main/select.do"
+            onclick="window.open(this.href, 'mywin','left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;">
+            계좌/신용카드 인증</a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <p class="" id="notice_pwidfd">
+    <span>법인폰 사용자는 법인폰 개인인증 서비스 신청 후 휴대폰 인증을 하실 수 있습니다.</span>
+    <span>본인인증이 잘 되지 않으시면 본인인증기관 고객센터로 문의 해주세요</span>
+    <span class="boldspan_idpw">NICE평가정보(주) 고객센터: 1600-1522</span>
+    <span class="boldspan_idpw">코리아크레딧뷰로(주) 고객센터 : 02-708-1000</span>
+  </p>
+</section>
+
+<?php include_once("../layout/footer.html"); ?>

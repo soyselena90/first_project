@@ -1,0 +1,138 @@
+<?php include_once("../layout/header.html"); ?>
+<body style = "background-color : #fff">
+  <!-- header -->
+ <header id="account_header">
+   <div id="showcase-top" class="showcase-top">
+     <a href="/index.html" class="logo_a"><img src="/img/Logo_01.svg" alt="K-LIVE"></a>
+     <a href="/login/login.html" class="btn btn-rounded">로그아웃</a>
+   </div>
+   <h3>My account</h3>
+ </header>
+<!-- section -->
+ <section id="account_section01" class="section_width">
+   <div id="my_detail_info" class="detail_info_account">
+     <h1>마이페이지</h1>
+     <div class="container_account">
+       <div class="account_top_box container_account_box">
+         <div class="account_title">
+           <h3>나의 계정</h3>
+         </div>
+         <div class="account_middle_info">
+           <span class="text_bold">이메일 : ss*****0@gmail.com</span>
+           <span id="span_pw" class="text_span">비밀번호 : </span>
+           <input type="password" class="form-control_pw input_span_pw" placeholder="비밀번호를 입력해주세요" required />
+           <span class="text_span">연락처 : 010-****-1680</span>
+         </div>
+         <div class="account_btn_edit">
+           <button type="button" name="button" class="btn plan_btn click_plan">수정</button>
+         </div>
+       </div>
+       <div class="account_midd_box container_account_box">
+         <div class="account_title">
+           <h3>멤버십</h3>
+         </div>
+         <div class="account_middle_info">
+           <span id="span_pw" class="text_bold">이용권 : </span>
+             <select id="plan_select" class="input_span_pw" name="planselect">
+               <option value="프리미엄">프리미엄 VIP</option>
+               <option value="스탠다드">스탠다드</option>
+               <option value="베이직">베이직</option>
+             </select>
+           <span class="text_span">오프라인 티켓 : 2장 사용가능</span>
+           <span class="text_span">라이브 공연 20%할인 쿠폰 : 사용완료</span>
+         </div>
+         <div class="account_btn_edit">
+             <button type="button" name="button" class="btn plan_btn click_plan">수정</button>
+         </div>
+       </div>
+       <div id="account_bttm_box" class="account_bttm_box container_account_box">
+         <div class="account_title">
+           <h3>결제 정보</h3>
+         </div>
+         <div class="account_middle_info">
+           <span class="text_bold">카드번호 : **** **** **** **88</span>
+           <span class="text_span">다음 결제일 : 2021년 2월 10일</span>
+           <span class="text_span">전 달 결제 정보 : 정상 승인</span>
+         </div>
+         <div class="account_btn_edit">
+           <button type="button" name="button" class="btn plan_btn no_change">수정</button>
+         </div>
+       </div>
+       <!-- watch list -->
+       <div id="watched_box">
+         <h3>관람리스트</h3>
+         <div class="watched_list">
+           <ul>
+             <li data-li_value="1">
+               <input id="checkall" type="checkbox" class="box_name">
+               <label for="checkall">전체선택</label>
+               <div id="select_delete_box" class="watch_list_btn">
+               <button type="button" id="select_delete_btn" class="account_btn watch_delete_btn">선택삭제</button>
+               </div>
+             </li>
+             <li data-li_value="2">
+               <input id="check_01" type="checkbox" class="box_name" name="cbox" value="1">
+               <label for="check_01"></label>
+               <div class="watched_imgbox">
+                 <img src="/img/concert-bts.png" alt="bts 공연디테일">
+               </div>
+               <div class="watched_detail">
+                 <span class="text_md">"LIVE BTS ONLINE CONCERT 2020"</span>
+               </div>
+               <div class="watch_list_btn">
+               <button type="button" class="account_btn watch_replay_btn">다시보기</button>
+               <button type="button" class="account_btn delete_btn">삭제</button>
+               </div>
+             </li>
+             <li data-li_value="3">
+               <input id="check_02" type="checkbox" class="box_name" name="cbox" value="2">
+               <label for="check_02"></label>
+               <div class="watched_imgbox">
+                 <img src="/img/mu_live_05.png" alt="명성황후 공연디테일">
+               </div>
+               <div class="watched_detail">
+                 <span class="text_md">"LIVE 명성황후"</span>
+               </div>
+               <div class="watch_list_btn">
+               <button type="button" class="account_btn watch_replay_btn">다시보기</button>
+               <button type="button" class="account_btn delete_btn">삭제</button>
+               </div>
+             </li>
+             <li data-li_value="4">
+               <input id="check_03" type="checkbox" class="box_name" name="cbox" value="3">
+               <label for="check_03"></label>
+               <div class="watched_imgbox">
+                  <img src="/img/op_live_05.png" alt="오페라의유령 공연디테일">
+               </div>
+               <div class="watched_detail">
+                 <span class="text_md">"다시보기 오페라 오페라의 유령"</span>
+               </div>
+               <div class="watch_list_btn">
+               <button type="button" class="account_btn watch_replay_btn">다시보기</button>
+               <button type="button" class="account_btn delete_btn">삭제</button>
+               </div>
+             </li>
+             <li>
+               <input id="check_04" type="checkbox" class="box_name" name="cbox" value="4">
+               <label for="check_04"></label>
+               <div class="watched_imgbox">
+                 <img src="/img/pl_live_03.png" alt="수상한흥신소 공연디테일">
+               </div>
+               <div class="watched_detail">
+                 <span class="text_md">"다시보기 연극 수상한흥신소"</span>
+               </div>
+               <div class="watch_list_btn">
+               <button type="button" class="account_btn watch_replay_btn">다시보기</button>
+               <button type="button" class="account_btn delete_btn">삭제</button>
+               </div>
+             </li>
+           </ul>
+         </div>
+       </div>
+     </div>
+   </div>
+   <div class="backtomain">
+     <a href="/sub/main_concert.html">메인으로</a>
+   </div>
+ </section>
+<?php include_once("../layout/footer.html"); ?>

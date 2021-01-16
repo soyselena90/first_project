@@ -1,0 +1,50 @@
+<?php include_once("../layout/header.html"); ?>
+<body>
+   <div id="login_div" class="login_div">
+     <div id="showcase-top" class="showcase-top">
+        <a href="/index.html" class="logo_a"><img src="/img/Logo_01.svg" alt="K-LIVE"></a>
+        <a href="/login/regi.html" class="btn btn-rounded">회원가입</a>
+     </div>
+     <div id="bgimg_login" class="bgimg_login">
+         <div class="container_login">
+           <div class="form_login">
+             <div id="account-box" class="account-box">
+                 <div class="logo">
+                    <h1>로그인</h1>
+                 </div>
+                 <form class="form-signin" action="#">
+                 <div class="form-group">
+                     <input type="text" class="form-control_id" placeholder="이메일을 입력해주세요" required autofocus />
+                     <input type="password" class="form-control_pw" placeholder="비밀번호를 입력해주세요" required />
+                 </div>
+                 <div class="login_btn">
+                 <button class="btn login-btn" type="button">Sign in</button>
+                 </div>
+                 <div class="under_btn_small_sen">
+                     <label class="checkbox">
+                         <input type="checkbox" value="remember-me" />로그인 정보 저장</label>
+                         <span class="forgotLnk" onclick='location.href="/login/id_and_pw.html"'> 아이디 / 비밀번호 찾기</span>
+                  </div>
+                 </form>
+                 <div id="or-box" class="or-box">
+                     <button class="btn btn-facebook btn-block" type="submit">
+                       <div class="img_box_logos">
+                         <img src="/img/facebooklogo.png" alt="페이스북로고">
+                         <a class="logo_click" href="https://www.facebook.com/">페이스북 로그인하기</a>
+                       </div>
+                     </button>
+                     <button class="btn btn-google btn-blockk" type="submit">
+                       <div class="img_box_logos">
+                         <img src="/img/googlelogo.png" alt="구글로고">
+                         <a class="logo_click" href="https://accounts.google.com/signin/v2/identifier?hl=ko&passive=true&continue=https%3A%2F%2Fwww.google.com%2F&ec=GAZAAQ&flowName=GlifWebSignIn&flowEntry=ServiceLogin">구글 로그인하기</a>
+                       </div>
+                     </button>
+                 </div>
+                  <span id="log_width" class="forgotLnk" onclick='location.href="/login/regi.html"'>아직도 회원이 아니신가요? 회원가입하기</span>
+             </div>
+           </div>
+       </div>
+     </div>
+   </div>
+ </body>
+<?php include_once("../layout/footer.html"); ?>

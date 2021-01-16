@@ -1,0 +1,193 @@
+@charset "UTF-8";
+
+@import "./_var.scss";
+@import  "./_mixin.scss";
+
+
+@font-face{
+  font-family:'Noto Sans kr';
+  font-style:normal;
+  font-weight:300;
+  src:url('/font_style/font_noto/notokr-regular.eot');
+  src:url('/font_style/font_noto/notokr-regular.eot?#iefix') format('embedded-opentype');
+}
+
+@font-face {
+  font-family: 'SDKukdetopokki-Lt';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/SDKukdetopokki-aLt00.woff') format('woff');
+  font-weight: normal;
+}
+@font-face {
+    font-family: 'CookieRun-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/CookieRun-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: '양진체';
+    src: url('https://cdn.jsdelivr.net/gh/supernovice-lab/font@0.9/yangjin.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'HealthsetBambooStd';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.0/HealthsetBambooStd.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Cafe24Danjunghae';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Danjunghae.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@keyframes glow {
+  from {
+    text-shadow: 0 0 0px #ccc, 0 0 5px #ccc, 0 0 15px #ccc;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 15px #2c0635, 0 0 20px #2c0635;
+  }
+}
+@keyframes show {
+  0% {margin-top:-270px;}
+  10% {margin-top:-180px;}
+  33% {margin-top:-180px;}
+  38% {margin-top:-90px;}
+  66% {margin-top:-90px;}
+  71% {margin-top:0px;}
+  99.99% {margin-top:0px;}
+  100% {margin-top:-270px;}
+}
+@keyframes flip {
+  0%,80% {
+    transform: rotateY(360deg)
+  }
+}
+
+
+//responsive web
+
+@media screen and (max-width : #{$break_point_1280}){
+
+  #myVideo{
+          top: 6rem;
+    }
+    .tab-3-p{
+        top: 40%;
+    }
+
+}
+
+@media screen and (max-width : #{$break_point_1080}){
+
+}
+
+@media screen and (max-width : #{$break_point_1024}){
+
+  #myVideo{
+          top: 5rem;
+    }
+    .tab-3-p{
+        top: 38%;
+    }
+    .btn-xl {
+      font-size: 1.5rem;
+      padding: 1.4rem 2rem;
+    }
+    .text-xl{
+      font-size: 1.5rem;
+    }
+    .text-lg{
+      font-size: 1.3rem;
+    }
+    .text-md{
+        font-size: 1rem;
+    }
+
+}
+
+@media screen and (max-width : #{$break_point_920}){
+
+  .showcase {
+    height: 70vh;
+  }
+  .hide-sm{
+    display: none;
+  }
+  .showcase-top > img {
+    top: 30%;
+    left: 5%;
+    transform: translate(0);
+  }
+  .showcase-content h1 {
+    font-size: 3.7rem;
+    line-height: 1;
+  }
+  .showcase-content p {
+    font-size: 1.5rem;
+  }
+  .footer .footer-cols {
+    grid-template-columns: repeat(2,1fr);
+  }
+  .btn-xl {
+    font-size: 1.5rem;
+    padding: 1.4rem 2rem;
+  }
+  .text-xl{
+    font-size: 1.5rem;
+  }
+  .text-lg{
+    font-size: 1.3rem;
+  }
+  .text-md{
+      font-size: 1rem;
+  }
+
+}
+
+@media screen and (max-width : #{$break_point_768}){
+
+  .showcase::after{
+    box-shadow: inset 80px 80px 250px #000000, inset -80px -80px 250px #000000;
+  }
+  #tab-1-content .tab-1-content-inner{
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  #tab-2-content .tab-2-content-top{
+    display: block;
+    text-align: center;
+  }
+  #tab-2content .tab-2-content-bottom{
+    grid-template-columns:  1fr;
+  }
+
+}
+
+@media screen and (max-width : #{$break_point_620}){
+
+}
+
+@media screen and (max-width : #{$break_point_580}){
+
+}
+
+@media screen and (max-width : #{$break_point_480}){
+
+}
+
+@media screen and (max-width : #{$break_point_420}){
+
+}
+
+@media screen and (max-width : #{$break_point_380}){
+
+}
+
+@media screen and (max-width : #{$break_point_360}){
+
+}
+@media screen and (max-width : #{$break_point_320}){
+
+}

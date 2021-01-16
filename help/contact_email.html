@@ -1,0 +1,46 @@
+<?php include_once("../layout/header.html"); ?>
+<body style="background-color : #2a2828">
+  <!-- <div id="email_blank_box" class="form">
+    <span class="email_b_span">이메일로 문의하기</span>
+    <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+      <div class="form-row">
+        <div class="col-lg-6">
+          <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+          <div class="validate"></div>
+        </div>
+        <div class="col-lg-6 form-lg-6">
+          <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+          <div class="validate"></div>
+        </div>
+      </div>
+      <div class="form-group">
+        <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+        <div class="validate"></div>
+      </div>
+      <div class="form-group">
+        <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+        <div class="validate"></div>
+      </div>
+
+      <div class="sent-message"><span>전송이 완료되었습니다. 감사합니다.</span>
+      <button id="close_send" type="button" name="button">닫기</button></div>
+
+      <div class="text-center"><button id="send_email" type="button" title="Send Message">보내기</button></div>
+    </form>
+  </div> -->
+
+  <div id="contactForm">
+  <h3>이메일 보내기</h3>
+  <small>문의사항을 작성해주세요. 보통 수일내로 연락드립니다.</small>
+
+  <form action="#">
+    <input placeholder="이름을 입력하세요" type="text" required />
+    <input placeholder="soyselena90@naver.com" type="email" required />
+    <input placeholder="제목" type="text" required />
+    <textarea placeholder="내용"></textarea>
+    <input class="formBtn submitforemail" type="submit" />
+    <input class="formBtn" type="reset" />
+  </form>
+</div>
+</body>
+</html>
