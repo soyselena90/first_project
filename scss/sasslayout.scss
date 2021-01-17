@@ -14,7 +14,6 @@ header{
 }
 
 /* logo & log-in */
-
 #showcase-top{
   position: absolute;
   width: 95%;
@@ -47,7 +46,7 @@ header{
 /* main_banner1 */
 
 #slider_banner{
-  .showcase{
+
     .showcase_bg01{
       width: 100%;
       height: 37.5rem;
@@ -68,7 +67,6 @@ header{
       }
     }
   }
-}
 .showcase-content{
   position: relative;
   margin: auto;
@@ -84,7 +82,7 @@ header{
      font-size: 4.5rem;
      line-height: 5rem;
      color: #fff;
-   }
+     }
    p{
      font-family: 'CookieRun-Regular';
      color: #fff;
@@ -126,8 +124,10 @@ img{
     }
     .bg_02_content{
       padding-top: 12rem;
+
       > h1{
         font-size: 3.5rem;
+        text-align: center;
       }
     }
   }
@@ -141,9 +141,9 @@ img{
     background: url('/img/backgroundbanner_03.png') center;
     z-index: 9999;
     -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 
     &:after{
       content: "";
@@ -163,13 +163,13 @@ img{
   .showcase_bg04{
     width: 100%;
     height: 37.5rem;
-    position:relative;
-    background: url('/img/backgroundbanner_04.png') center;
-    z-index: 9999;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    position: relative;
+
+    > img{
+      display: block;
+      width: 100%;
+      height: 100%;
+      position:relative;
 
     &:after{
       content: "";
@@ -182,13 +182,13 @@ img{
       /* background: rgba(0, 0, 0, 0.2); */
       box-shadow: inset 0rem 1rem 10rem #000, inset -3rem -3rem 5rem #000;
     }
+  }
     .bg_04_content{
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      left: 28%;
-      top: 8%;
+
+      position: absolute;
+      z-index: 2;
+      top: 7%;
+      left: 70%;
 
       p{
         font-size: 1.8rem;
@@ -306,7 +306,7 @@ img{
 
 // Tab Content
 
-.tab-content{
+.tab-content {
   background-color: #000;
   color: #fff;
 
@@ -358,7 +358,7 @@ img{
 
       #myVideo{
         width: 42%;
-        top: 7rem;
+        top: 17%;
         position: absolute;
         left: 29%;
         opacity: 90%;
@@ -366,10 +366,12 @@ img{
       .TV_fr{
         justify-content: center;
         display: flex;
+        width: 55%;
+        margin: 0 auto;
 
         > img{
           display: block;
-          width: 55%;
+          width: 100%;
           z-index: 2;
         }
       }
@@ -378,7 +380,8 @@ img{
         background: rgba(0, 0, 0, 0.5);
         left: 29%;
         width: 41%;
-        top: 49%;
+        top: 40%;
+        z-index: 2;
 
         > p{
           text-align: left;
@@ -408,6 +411,9 @@ img{
   #tab-2-content,#tab-4-content{
     background-color: #151515;
   }
+}
+.wid768{
+  display: none;
 }
 
 /* Tab Content 4 table */

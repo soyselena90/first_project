@@ -17,6 +17,7 @@
   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/SDKukdetopokki-aLt00.woff') format('woff');
   font-weight: normal;
 }
+
 @font-face {
     font-family: 'CookieRun-Regular';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/CookieRun-Regular.woff') format('woff');
@@ -56,7 +57,7 @@
   38% {margin-top:-90px;}
   66% {margin-top:-90px;}
   71% {margin-top:0px;}
-  99.99% {margin-top:0px;}
+  99% {margin-top:0px;}
   100% {margin-top:-270px;}
 }
 @keyframes flip {
@@ -68,7 +69,7 @@
 
 //responsive web
 
-@media screen and (max-width : #{$break_point_1280}){
+@media screen and (max-width : 1280px){
 
   #myVideo{
           top: 6rem;
@@ -79,11 +80,11 @@
 
 }
 
-@media screen and (max-width : #{$break_point_1080}){
+@media screen and (max-width : 1080px){
 
 }
 
-@media screen and (max-width : #{$break_point_1024}){
+@media screen and (max-width : 1024px){
 
   #myVideo{
           top: 5rem;
@@ -107,7 +108,7 @@
 
 }
 
-@media screen and (max-width : #{$break_point_920}){
+@media screen and ( max-width : 920px ){
 
   .showcase {
     height: 70vh;
@@ -146,7 +147,7 @@
 
 }
 
-@media screen and (max-width : #{$break_point_768}){
+@media screen and (max-width :768px){
 
   .showcase::after{
     box-shadow: inset 80px 80px 250px #000000, inset -80px -80px 250px #000000;
@@ -165,29 +166,29 @@
 
 }
 
-@media screen and (max-width : #{$break_point_620}){
+@media screen and (max-width : 620px){
 
 }
 
-@media screen and (max-width : #{$break_point_580}){
+@media screen and (max-width : 580px){
 
 }
 
-@media screen and (max-width : #{$break_point_480}){
+@media screen and (max-width : 480px){
 
 }
 
-@media screen and (max-width : #{$break_point_420}){
+@media screen and (max-width : 420px){
 
 }
 
-@media screen and (max-width : #{$break_point_380}){
+@media screen and (max-width :380px){
 
 }
 
-@media screen and (max-width : #{$break_point_360}){
+@media screen and (max-width : 360px){
 
 }
-@media screen and (max-width : #{$break_point_320}){
+@media screen and (max-width : 320px){
 
 }
